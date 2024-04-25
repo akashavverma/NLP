@@ -9,8 +9,7 @@ Preamble, Facts, Ruling by Lower Court, Issues, Argument by Petitioner, Argument
 Statute, Precedent Relied, Precedent Not Relied, Ratio of the decision, Ruling by Present Court and None.
 The Evaluation Metrics is F1 Score.
 
-RR Task Relevance: The purpose of creating a rhetorical role corpus is to enable an automated understanding of legal documents by segmenting them into topically coherent units (Figure 1). This segmentation is a fundamental building block for many legal AI applications like judgment summarization, judgment outcome 
-prediction, precedent search, etc.
+RR Task Relevance: The purpose of creating a rhetorical role corpus is to enable an automated understanding of legal documents by segmenting them into topically coherent units (Refer to Problem Definition in the poster). This segmentation is a fundamental building block for many legal AI applications like judgment summarization, judgment outcome prediction, precedent search, etc.
 
 We proposed an architecture inspired from IRIT_IRIS team which has input as Dynamic-Filled Contextualized Sentence Chunks passed on to Indian System Legal Bert Encoder further passed to an Attention layer and a CRF layer. A better understanding of the project can be understood from the poster below:
 ![WhatsApp Image 2024-04-25 at 23 41 37_b642c37d](https://github.com/akashavverma/Rhetorical_Roles-Prediction-in-Legal-Documents/assets/47278817/a44acffa-2d76-44c1-95a4-0aa8148865b4)
