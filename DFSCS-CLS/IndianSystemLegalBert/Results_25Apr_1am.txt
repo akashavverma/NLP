@@ -1,0 +1,33 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Started iteration 1
+Starting epoch 1... finished! Time:  00h03m59s
+Starting epoch 2... finished! Time:  00h03m59s
+Starting epoch 3... finished! Time:  00h03m59s
+Starting epoch 4... finished! Time:  00h03m58s
+  Iteration time:  00h16m00s
+Started iteration 2
+Starting epoch 1... finished! Time:  00h03m57s
+Starting epoch 2... finished! Time:  00h03m58s
+Starting epoch 3... finished! Time:  00h03m58s
+Starting epoch 4... finished! Time:  00h03m58s
+  Iteration time:  00h16m07s
+Started iteration 3
+Starting epoch 1... finished! Time:  00h03m58s
+Starting epoch 2... finished! Time:  00h03m58s
+Starting epoch 3... finished! Time:  00h03m58s
+Starting epoch 4... finished! Time:  00h03m58s
+  Iteration time:  00h16m08s
+Started iteration 4
+Starting epoch 1... finished! Time:  00h03m58s
+Starting epoch 2... finished! Time:  00h03m58s
+Starting epoch 3... finished! Time:  00h03m58s
+Starting epoch 4... finished! Time:  00h03m57s
+  Iteration time:  00h16m07s
+End of evaluation. Total time: 01h04m58s
