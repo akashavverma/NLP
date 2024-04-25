@@ -1,0 +1,731 @@
+Loading data with 1 folds...
+Loading tokenized data...
+Loading tokenized data finished.
+Creating batches for 1 folds...
+Creating batches finished.
+2022-11-24 17:01:42.631: Fold 0 of 1
+2022-11-24 17:01:42.632: Starting training 0 for fold 0... 
+2022-11-24 17:01:42.632: device: cuda:0
+2022-11-24 17:01:42.632: fold: 0
+2022-11-24 17:01:42.632: train batches: 245
+2022-11-24 17:01:42.632: dev batches: 30
+2022-11-24 17:01:42.632: test batches: 30
+Some weights of the model checkpoint at t5-base were not used when initializing T5EncoderModel: ['decoder.block.5.layer.0.SelfAttention.v.weight', 'decoder.block.8.layer.2.DenseReluDense.wi.weight', 'decoder.block.3.layer.1.EncDecAttention.k.weight', 'decoder.block.6.layer.2.layer_norm.weight', 'decoder.block.9.layer.1.EncDecAttention.q.weight', 'decoder.block.10.layer.2.DenseReluDense.wo.weight', 'decoder.block.7.layer.0.SelfAttention.k.weight', 'decoder.block.6.layer.0.layer_norm.weight', 'decoder.block.9.layer.0.SelfAttention.q.weight', 'decoder.block.1.layer.0.layer_norm.weight', 'decoder.block.3.layer.1.layer_norm.weight', 'decoder.block.0.layer.2.layer_norm.weight', 'decoder.block.8.layer.0.SelfAttention.k.weight', 'decoder.block.8.layer.1.EncDecAttention.o.weight', 'decoder.block.5.layer.1.EncDecAttention.k.weight', 'decoder.block.10.layer.0.SelfAttention.o.weight', 'decoder.block.2.layer.2.DenseReluDense.wo.weight', 'decoder.block.2.layer.0.SelfAttention.v.weight', 'decoder.block.2.layer.1.EncDecAttention.q.weight', 'decoder.block.5.layer.0.layer_norm.weight', 'decoder.block.3.layer.1.EncDecAttention.q.weight', 'decoder.block.10.layer.0.layer_norm.weight', 'decoder.block.4.layer.2.DenseReluDense.wi.weight', 'decoder.block.0.layer.0.SelfAttention.relative_attention_bias.weight', 'decoder.block.6.layer.2.DenseReluDense.wo.weight', 'decoder.block.3.layer.2.DenseReluDense.wi.weight', 'decoder.block.7.layer.0.SelfAttention.o.weight', 'decoder.block.1.layer.1.EncDecAttention.v.weight', 'decoder.block.5.layer.2.DenseReluDense.wi.weight', 'decoder.block.2.layer.0.SelfAttention.q.weight', 'decoder.block.4.layer.2.DenseReluDense.wo.weight', 'decoder.block.1.layer.0.SelfAttention.q.weight', 'decoder.block.6.layer.1.EncDecAttention.q.weight', 'decoder.block.6.layer.1.EncDecAttention.v.weight', 'decoder.block.9.layer.1.EncDecAttention.v.weight', 'decoder.block.7.layer.2.DenseReluDense.wi.weight', 'decoder.block.4.layer.0.SelfAttention.o.weight', 'decoder.block.11.layer.0.SelfAttention.k.weight', 'decoder.block.8.layer.0.SelfAttention.q.weight', 'decoder.block.8.layer.2.DenseReluDense.wo.weight', 'decoder.block.0.layer.1.EncDecAttention.k.weight', 'decoder.block.10.layer.1.EncDecAttention.v.weight', 'decoder.block.6.layer.0.SelfAttention.o.weight', 'decoder.final_layer_norm.weight', 'decoder.block.7.layer.1.EncDecAttention.o.weight', 'decoder.block.4.layer.1.EncDecAttention.v.weight', 'decoder.block.10.layer.1.layer_norm.weight', 'decoder.block.8.layer.1.EncDecAttention.v.weight', 'decoder.block.8.layer.0.SelfAttention.v.weight', 'decoder.block.8.layer.1.layer_norm.weight', 'decoder.block.6.layer.1.EncDecAttention.k.weight', 'decoder.block.9.layer.1.layer_norm.weight', 'decoder.block.0.layer.0.SelfAttention.v.weight', 'decoder.block.9.layer.0.SelfAttention.k.weight', 'decoder.block.3.layer.0.SelfAttention.o.weight', 'decoder.block.9.layer.2.DenseReluDense.wo.weight', 'decoder.block.7.layer.1.EncDecAttention.q.weight', 'decoder.block.6.layer.2.DenseReluDense.wi.weight', 'decoder.block.4.layer.1.layer_norm.weight', 'decoder.block.2.layer.0.layer_norm.weight', 'decoder.block.1.layer.1.layer_norm.weight', 'decoder.block.7.layer.1.EncDecAttention.v.weight', 'decoder.block.0.layer.0.layer_norm.weight', 'decoder.block.1.layer.0.SelfAttention.k.weight', 'decoder.block.10.layer.2.DenseReluDense.wi.weight', 'decoder.block.5.layer.1.layer_norm.weight', 'decoder.block.9.layer.0.SelfAttention.o.weight', 'decoder.block.0.layer.1.EncDecAttention.q.weight', 'decoder.block.7.layer.2.layer_norm.weight', 'decoder.block.9.layer.1.EncDecAttention.o.weight', 'decoder.block.10.layer.1.EncDecAttention.k.weight', 'decoder.block.11.layer.2.DenseReluDense.wi.weight', 'decoder.block.11.layer.2.layer_norm.weight', 'decoder.block.0.layer.0.SelfAttention.q.weight', 'decoder.block.2.layer.1.EncDecAttention.k.weight', 'decoder.block.6.layer.1.EncDecAttention.o.weight', 'decoder.block.0.layer.1.EncDecAttention.relative_attention_bias.weight', 'decoder.block.0.layer.0.SelfAttention.o.weight', 'decoder.block.10.layer.2.layer_norm.weight', 'decoder.block.1.layer.0.SelfAttention.v.weight', 'decoder.block.5.layer.1.EncDecAttention.q.weight', 'decoder.block.4.layer.1.EncDecAttention.k.weight', 'decoder.block.9.layer.0.layer_norm.weight', 'decoder.block.2.layer.0.SelfAttention.o.weight', 'decoder.block.2.layer.1.EncDecAttention.v.weight', 'decoder.block.11.layer.1.EncDecAttention.o.weight', 'decoder.block.2.layer.0.SelfAttention.k.weight', 'decoder.block.1.layer.1.EncDecAttention.k.weight', 'decoder.block.7.layer.1.EncDecAttention.k.weight', 'decoder.block.11.layer.0.SelfAttention.q.weight', 'decoder.block.0.layer.2.DenseReluDense.wi.weight', 'decoder.block.4.layer.1.EncDecAttention.q.weight', 'decoder.block.5.layer.0.SelfAttention.k.weight', 'decoder.block.9.layer.2.DenseReluDense.wi.weight', 'decoder.block.3.layer.2.layer_norm.weight', 'decoder.block.1.layer.1.EncDecAttention.o.weight', 'decoder.block.11.layer.0.SelfAttention.o.weight', 'decoder.block.0.layer.1.layer_norm.weight', 'decoder.block.11.layer.0.layer_norm.weight', 'decoder.block.2.layer.2.DenseReluDense.wi.weight', 'decoder.block.1.layer.2.DenseReluDense.wi.weight', 'decoder.block.4.layer.0.SelfAttention.v.weight', 'decoder.block.11.layer.1.EncDecAttention.k.weight', 'decoder.block.9.layer.1.EncDecAttention.k.weight', 'decoder.block.1.layer.0.SelfAttention.o.weight', 'decoder.block.8.layer.1.EncDecAttention.q.weight', 'decoder.block.4.layer.2.layer_norm.weight', 'decoder.block.8.layer.0.layer_norm.weight', 'decoder.block.5.layer.0.SelfAttention.q.weight', 'decoder.block.5.layer.1.EncDecAttention.v.weight', 'decoder.block.1.layer.2.DenseReluDense.wo.weight', 'decoder.block.0.layer.2.DenseReluDense.wo.weight', 'decoder.block.8.layer.1.EncDecAttention.k.weight', 'decoder.block.7.layer.0.SelfAttention.q.weight', 'decoder.block.5.layer.2.layer_norm.weight', 'decoder.block.3.layer.0.layer_norm.weight', 'decoder.block.3.layer.0.SelfAttention.k.weight', 'decoder.block.2.layer.1.EncDecAttention.o.weight', 'decoder.block.2.layer.2.layer_norm.weight', 'decoder.block.0.layer.1.EncDecAttention.o.weight', 'decoder.block.10.layer.0.SelfAttention.k.weight', 'decoder.block.4.layer.0.layer_norm.weight', 'decoder.block.5.layer.1.EncDecAttention.o.weight', 'decoder.block.9.layer.0.SelfAttention.v.weight', 'decoder.block.7.layer.2.DenseReluDense.wo.weight', 'decoder.block.3.layer.2.DenseReluDense.wo.weight', 'decoder.block.7.layer.0.layer_norm.weight', 'decoder.block.0.layer.1.EncDecAttention.v.weight', 'decoder.block.7.layer.0.SelfAttention.v.weight', 'decoder.block.11.layer.0.SelfAttention.v.weight', 'decoder.block.10.layer.1.EncDecAttention.q.weight', 'decoder.block.11.layer.1.EncDecAttention.q.weight', 'decoder.block.9.layer.2.layer_norm.weight', 'decoder.block.1.layer.2.layer_norm.weight', 'decoder.block.6.layer.0.SelfAttention.k.weight', 'decoder.block.3.layer.0.SelfAttention.v.weight', 'decoder.block.6.layer.0.SelfAttention.v.weight', 'decoder.block.10.layer.1.EncDecAttention.o.weight', 'decoder.block.4.layer.0.SelfAttention.k.weight', 'decoder.block.8.layer.2.layer_norm.weight', 'decoder.block.0.layer.0.SelfAttention.k.weight', 'decoder.block.4.layer.1.EncDecAttention.o.weight', 'decoder.block.3.layer.1.EncDecAttention.o.weight', 'decoder.block.6.layer.1.layer_norm.weight', 'decoder.block.5.layer.2.DenseReluDense.wo.weight', 'decoder.block.8.layer.0.SelfAttention.o.weight', 'decoder.block.4.layer.0.SelfAttention.q.weight', 'decoder.block.10.layer.0.SelfAttention.v.weight', 'decoder.block.2.layer.1.layer_norm.weight', 'decoder.block.10.layer.0.SelfAttention.q.weight', 'decoder.block.5.layer.0.SelfAttention.o.weight', 'decoder.block.7.layer.1.layer_norm.weight', 'decoder.block.11.layer.1.layer_norm.weight', 'decoder.block.6.layer.0.SelfAttention.q.weight', 'decoder.block.11.layer.2.DenseReluDense.wo.weight', 'decoder.block.11.layer.1.EncDecAttention.v.weight', 'decoder.block.1.layer.1.EncDecAttention.q.weight', 'decoder.block.3.layer.0.SelfAttention.q.weight', 'decoder.block.3.layer.1.EncDecAttention.v.weight']
+- This IS expected if you are initializing T5EncoderModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing T5EncoderModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of T5EncoderModel were not initialized from the model checkpoint at t5-base and are newly initialized: ['encoder.embed_tokens.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2022-11-24 17:01:45.991: Model: BertHSLN
+2022-11-24 17:01:50.502: Number of model parameters: 152099202
+2022-11-24 17:01:50.502: Number of model parameters bert: 0
+2022-11-24 17:01:50.503: Number of model parameters word_lstm: 9265792
+2022-11-24 17:01:50.503: Number of model parameters attention_pooling: 306400
+2022-11-24 17:01:50.503: Number of model parameters sentence_lstm: 142504000
+2022-11-24 17:01:50.503: Number of model parameters crf: 23010
+2022-11-24 17:01:50.507: training model for fold 0 in epoch 0 ...
+2022-11-24 17:01:51.044: Loss in fold 0, epoch 0, batch 0: 316.6069641113281
+2022-11-24 17:02:43.571: Loss in fold 0, epoch 0, batch 100: 171.67922973632812
+2022-11-24 17:03:29.872: Loss in fold 0, epoch 0, batch 200: 151.769287109375
+2022-11-24 17:03:51.495: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:03:59.051: New best dev weighted-f1 0.6441858706020923!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:04:06.589: *** fold: 0,  epoch: 0, train duration: 120.9883828163147, dev weighted-f1: 0.6441858706020923, test weighted-F1: 0.6441858706020923, test macro-F1: 0.2921126950370915, test accuracy: 0.7117054532823898
+2022-11-24 17:04:06.589: training model for fold 0 in epoch 1 ...
+2022-11-24 17:04:07.123: Loss in fold 0, epoch 1, batch 0: 198.96063232421875
+2022-11-24 17:04:57.280: Loss in fold 0, epoch 1, batch 100: 84.62725830078125
+2022-11-24 17:05:47.435: Loss in fold 0, epoch 1, batch 200: 64.92266845703125
+2022-11-24 17:06:08.571: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:06:16.083: New best dev weighted-f1 0.6983666243447533!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:06:23.624: *** fold: 0,  epoch: 1, train duration: 121.98273801803589, dev weighted-f1: 0.6983666243447533, test weighted-F1: 0.6983666243447533, test macro-F1: 0.36461609348544255, test accuracy: 0.7516498784300104
+2022-11-24 17:06:23.624: training model for fold 0 in epoch 2 ...
+2022-11-24 17:06:24.220: Loss in fold 0, epoch 2, batch 0: 74.9874267578125
+2022-11-24 17:07:15.414: Loss in fold 0, epoch 2, batch 100: 86.34423828125
+2022-11-24 17:08:04.154: Loss in fold 0, epoch 2, batch 200: 52.17144775390625
+2022-11-24 17:08:25.657: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:08:33.180: New best dev weighted-f1 0.7094614986802844!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:08:40.667: *** fold: 0,  epoch: 2, train duration: 122.03282952308655, dev weighted-f1: 0.7094614986802844, test weighted-F1: 0.7094614986802844, test macro-F1: 0.3793334980476103, test accuracy: 0.7665856200069469
+2022-11-24 17:08:40.667: training model for fold 0 in epoch 3 ...
+2022-11-24 17:08:41.151: Loss in fold 0, epoch 3, batch 0: 111.00897216796875
+2022-11-24 17:09:27.890: Loss in fold 0, epoch 3, batch 100: 66.23675537109375
+2022-11-24 17:10:16.801: Loss in fold 0, epoch 3, batch 200: 139.94296264648438
+2022-11-24 17:10:41.935: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:10:49.465: fold: 0, epoch: 3, train duration: 121.26787066459656, dev weighted-f1: 0.6898525927796965
+2022-11-24 17:10:49.465: training model for fold 0 in epoch 4 ...
+2022-11-24 17:10:49.754: Loss in fold 0, epoch 4, batch 0: 47.71722412109375
+2022-11-24 17:11:38.958: Loss in fold 0, epoch 4, batch 100: 28.56298828125
+2022-11-24 17:12:29.246: Loss in fold 0, epoch 4, batch 200: 18.429931640625
+2022-11-24 17:12:51.626: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:12:59.158: New best dev weighted-f1 0.7533392935159012!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:13:06.676: *** fold: 0,  epoch: 4, train duration: 122.16081023216248, dev weighted-f1: 0.7533392935159012, test weighted-F1: 0.7533392935159012, test macro-F1: 0.5019019852349589, test accuracy: 0.7797846474470302
+2022-11-24 17:13:06.676: training model for fold 0 in epoch 5 ...
+2022-11-24 17:13:07.782: Loss in fold 0, epoch 5, batch 0: 149.4576416015625
+2022-11-24 17:13:57.512: Loss in fold 0, epoch 5, batch 100: 25.29754638671875
+2022-11-24 17:14:48.595: Loss in fold 0, epoch 5, batch 200: 109.4383544921875
+2022-11-24 17:15:08.707: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:15:16.258: New best dev weighted-f1 0.7629009078350045!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:15:23.787: *** fold: 0,  epoch: 5, train duration: 122.03096890449524, dev weighted-f1: 0.7629009078350045, test weighted-F1: 0.7629009078350045, test macro-F1: 0.5155071304043742, test accuracy: 0.7905522750955193
+2022-11-24 17:15:23.787: training model for fold 0 in epoch 6 ...
+2022-11-24 17:15:24.316: Loss in fold 0, epoch 6, batch 0: 88.24053955078125
+2022-11-24 17:16:16.752: Loss in fold 0, epoch 6, batch 100: 49.60321044921875
+2022-11-24 17:17:06.214: Loss in fold 0, epoch 6, batch 200: 71.38897705078125
+2022-11-24 17:17:25.428: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:17:32.985: New best dev weighted-f1 0.7661318322486806!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:17:40.485: *** fold: 0,  epoch: 6, train duration: 121.64113640785217, dev weighted-f1: 0.7661318322486806, test weighted-F1: 0.7661318322486806, test macro-F1: 0.5610101988149189, test accuracy: 0.779089961792289
+2022-11-24 17:17:40.486: training model for fold 0 in epoch 7 ...
+2022-11-24 17:17:40.721: Loss in fold 0, epoch 7, batch 0: 19.6112060546875
+2022-11-24 17:18:31.523: Loss in fold 0, epoch 7, batch 100: 41.45654296875
+2022-11-24 17:19:21.986: Loss in fold 0, epoch 7, batch 200: 143.14129638671875
+2022-11-24 17:19:42.783: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:19:50.324: New best dev weighted-f1 0.7817907091618751!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:19:57.850: *** fold: 0,  epoch: 7, train duration: 122.29713439941406, dev weighted-f1: 0.7817907091618751, test weighted-F1: 0.7817907091618751, test macro-F1: 0.5524031080762397, test accuracy: 0.8023619312261202
+2022-11-24 17:19:57.850: training model for fold 0 in epoch 8 ...
+2022-11-24 17:19:58.344: Loss in fold 0, epoch 8, batch 0: 135.13690185546875
+2022-11-24 17:20:46.937: Loss in fold 0, epoch 8, batch 100: 37.9957275390625
+2022-11-24 17:21:36.010: Loss in fold 0, epoch 8, batch 200: 119.4908447265625
+2022-11-24 17:21:59.793: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:22:07.388: New best dev weighted-f1 0.784596237296874!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:22:14.935: *** fold: 0,  epoch: 8, train duration: 121.94231295585632, dev weighted-f1: 0.784596237296874, test weighted-F1: 0.784596237296874, test macro-F1: 0.5814862114276758, test accuracy: 0.8006252170892671
+2022-11-24 17:22:14.935: training model for fold 0 in epoch 9 ...
+2022-11-24 17:22:15.706: Loss in fold 0, epoch 9, batch 0: 85.1256103515625
+2022-11-24 17:23:04.565: Loss in fold 0, epoch 9, batch 100: 127.2064208984375
+2022-11-24 17:23:55.350: Loss in fold 0, epoch 9, batch 200: 126.96038818359375
+2022-11-24 17:24:16.855: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:24:24.415: New best dev weighted-f1 0.7919439588186642!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:24:31.965: *** fold: 0,  epoch: 9, train duration: 121.92004680633545, dev weighted-f1: 0.7919439588186642, test weighted-F1: 0.7919439588186642, test macro-F1: 0.6010569638943438, test accuracy: 0.8072247308093088
+2022-11-24 17:24:31.966: training model for fold 0 in epoch 10 ...
+2022-11-24 17:24:32.775: Loss in fold 0, epoch 10, batch 0: 144.9205322265625
+2022-11-24 17:25:21.581: Loss in fold 0, epoch 10, batch 100: 43.1004638671875
+2022-11-24 17:26:11.294: Loss in fold 0, epoch 10, batch 200: 43.259033203125
+2022-11-24 17:26:34.012: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:26:41.561: fold: 0, epoch: 10, train duration: 122.04668116569519, dev weighted-f1: 0.7880570994644176
+2022-11-24 17:26:41.561: training model for fold 0 in epoch 11 ...
+2022-11-24 17:26:42.313: Loss in fold 0, epoch 11, batch 0: 129.5751953125
+2022-11-24 17:27:29.641: Loss in fold 0, epoch 11, batch 100: 91.39453125
+2022-11-24 17:28:19.321: Loss in fold 0, epoch 11, batch 200: 26.22943115234375
+2022-11-24 17:28:43.712: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:28:51.246: New best dev weighted-f1 0.7924024508710417!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:28:58.775: *** fold: 0,  epoch: 11, train duration: 122.15107250213623, dev weighted-f1: 0.7924024508710417, test weighted-F1: 0.7924024508710417, test macro-F1: 0.5948706339722524, test accuracy: 0.8068773879819382
+2022-11-24 17:28:58.775: training model for fold 0 in epoch 12 ...
+2022-11-24 17:28:59.221: Loss in fold 0, epoch 12, batch 0: 42.044921875
+2022-11-24 17:29:51.420: Loss in fold 0, epoch 12, batch 100: 18.83856201171875
+2022-11-24 17:30:37.535: Loss in fold 0, epoch 12, batch 200: 54.90167236328125
+2022-11-24 17:31:00.534: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:31:08.059: fold: 0, epoch: 12, train duration: 121.75808310508728, dev weighted-f1: 0.7847313172355058
+2022-11-24 17:31:08.059: training model for fold 0 in epoch 13 ...
+2022-11-24 17:31:08.662: Loss in fold 0, epoch 13, batch 0: 88.5985107421875
+2022-11-24 17:32:00.571: Loss in fold 0, epoch 13, batch 100: 61.0908203125
+2022-11-24 17:32:47.120: Loss in fold 0, epoch 13, batch 200: 64.136962890625
+2022-11-24 17:33:10.398: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:33:17.940: New best dev weighted-f1 0.7939914551316852!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:33:25.486: *** fold: 0,  epoch: 13, train duration: 122.3382158279419, dev weighted-f1: 0.7939914551316852, test weighted-F1: 0.7939914551316852, test macro-F1: 0.601289908354819, test accuracy: 0.8030566168808614
+2022-11-24 17:33:25.486: training model for fold 0 in epoch 14 ...
+2022-11-24 17:33:25.754: Loss in fold 0, epoch 14, batch 0: 21.24761962890625
+2022-11-24 17:34:15.325: Loss in fold 0, epoch 14, batch 100: 43.9403076171875
+2022-11-24 17:35:04.474: Loss in fold 0, epoch 14, batch 200: 33.43414306640625
+2022-11-24 17:35:27.187: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:35:34.740: New best dev weighted-f1 0.7979870731347174!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:35:42.293: *** fold: 0,  epoch: 14, train duration: 121.70082211494446, dev weighted-f1: 0.7979870731347174, test weighted-F1: 0.7979870731347174, test macro-F1: 0.6133435571764478, test accuracy: 0.8058353594998263
+2022-11-24 17:35:42.293: training model for fold 0 in epoch 15 ...
+2022-11-24 17:35:43.124: Loss in fold 0, epoch 15, batch 0: 103.7882080078125
+2022-11-24 17:36:34.371: Loss in fold 0, epoch 15, batch 100: 14.38134765625
+2022-11-24 17:37:23.703: Loss in fold 0, epoch 15, batch 200: 26.42755126953125
+2022-11-24 17:37:43.897: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:37:51.444: New best dev weighted-f1 0.7981103396840503!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:37:58.975: *** fold: 0,  epoch: 15, train duration: 121.60331964492798, dev weighted-f1: 0.7981103396840503, test weighted-F1: 0.7981103396840503, test macro-F1: 0.6091800688963409, test accuracy: 0.8082667592914207
+2022-11-24 17:37:58.975: training model for fold 0 in epoch 16 ...
+2022-11-24 17:37:59.559: Loss in fold 0, epoch 16, batch 0: 97.73931884765625
+2022-11-24 17:38:54.029: Loss in fold 0, epoch 16, batch 100: 41.827880859375
+2022-11-24 17:39:39.716: Loss in fold 0, epoch 16, batch 200: 70.6077880859375
+2022-11-24 17:40:00.851: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:40:08.392: New best dev weighted-f1 0.7989284893144192!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:40:15.932: *** fold: 0,  epoch: 16, train duration: 121.8757483959198, dev weighted-f1: 0.7989284893144192, test weighted-F1: 0.7989284893144192, test macro-F1: 0.6085257516727588, test accuracy: 0.8127822160472387
+2022-11-24 17:40:15.932: training model for fold 0 in epoch 17 ...
+2022-11-24 17:40:16.549: Loss in fold 0, epoch 17, batch 0: 90.1337890625
+2022-11-24 17:41:06.568: Loss in fold 0, epoch 17, batch 100: 18.941162109375
+2022-11-24 17:41:55.446: Loss in fold 0, epoch 17, batch 200: 81.3369140625
+2022-11-24 17:42:17.225: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:42:24.728: fold: 0, epoch: 17, train duration: 121.2929334640503, dev weighted-f1: 0.7983395058900552
+2022-11-24 17:42:24.728: training model for fold 0 in epoch 18 ...
+2022-11-24 17:42:25.216: Loss in fold 0, epoch 18, batch 0: 83.029541015625
+2022-11-24 17:43:11.588: Loss in fold 0, epoch 18, batch 100: 144.31689453125
+2022-11-24 17:44:02.021: Loss in fold 0, epoch 18, batch 200: 19.6903076171875
+2022-11-24 17:44:26.455: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:44:34.013: New best dev weighted-f1 0.7990186865530623!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:44:41.569: *** fold: 0,  epoch: 18, train duration: 121.72698903083801, dev weighted-f1: 0.7990186865530623, test weighted-F1: 0.7990186865530623, test macro-F1: 0.6103711640920119, test accuracy: 0.8127822160472387
+2022-11-24 17:44:41.570: training model for fold 0 in epoch 19 ...
+2022-11-24 17:44:42.291: Loss in fold 0, epoch 19, batch 0: 167.511962890625
+2022-11-24 17:45:32.470: Loss in fold 0, epoch 19, batch 100: 20.553985595703125
+2022-11-24 17:46:23.363: Loss in fold 0, epoch 19, batch 200: 63.8944091796875
+2022-11-24 17:46:43.581: evaluating model...
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:46:51.131: New best dev weighted-f1 0.7994349817425909!
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/miniconda3/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/grads/g/guptashubham1798/proj/rhetorical-role-baseline/eval.py:19: RuntimeWarning: invalid value encountered in true_divide
+  confusion = np.around(confusion_abs.astype('float') / confusion_abs.sum(axis=1)[:, np.newaxis] * 100, 2)
+2022-11-24 17:46:58.669: *** fold: 0,  epoch: 19, train duration: 122.01166939735413, dev weighted-f1: 0.7994349817425909, test weighted-F1: 0.7994349817425909, test macro-F1: 0.60784271476759, test accuracy: 0.8141715873567211
+2022-11-24 17:46:58.672: saving best model to results/2022-11-24_17_01_41_pubmed-20k_baseline/0_0_model.pt
+2022-11-24 17:47:00.609: finished training 0 for fold 0: 2717.9771468639374
+Training finished.
+Calculating metrics...
+Attention pooling dim: 22740
++------------------------------------------------------+------------+
+|                       Modules                        | Parameters |
++------------------------------------------------------+------------+
+|            word_lstm._module.weight_ih_l0            | 2,328,576  |
+|            word_lstm._module.weight_hh_l0            | 2,298,256  |
+|             word_lstm._module.bias_ih_l0             |   3,032    |
+|             word_lstm._module.bias_hh_l0             |   3,032    |
+|        word_lstm._module.weight_ih_l0_reverse        | 2,328,576  |
+|        word_lstm._module.weight_hh_l0_reverse        | 2,298,256  |
+|         word_lstm._module.bias_ih_l0_reverse         |   3,032    |
+|         word_lstm._module.bias_hh_l0_reverse         |   3,032    |
+|           attention_pooling.linear1.weight           |  303,200   |
+|            attention_pooling.linear1.bias            |    200     |
+|           attention_pooling.linear2.weight           |   3,000    |
+|          sentence_lstm._module.weight_ih_l0          | 68,947,680 |
+|          sentence_lstm._module.weight_hh_l0          | 2,298,256  |
+|           sentence_lstm._module.bias_ih_l0           |   3,032    |
+|           sentence_lstm._module.bias_hh_l0           |   3,032    |
+|      sentence_lstm._module.weight_ih_l0_reverse      | 68,947,680 |
+|      sentence_lstm._module.weight_hh_l0_reverse      | 2,298,256  |
+|       sentence_lstm._module.bias_ih_l0_reverse       |   3,032    |
+|       sentence_lstm._module.bias_hh_l0_reverse       |   3,032    |
+|   crf.per_task_output.pubmed-20k.classifier.weight   |   22,740   |
+|    crf.per_task_output.pubmed-20k.classifier.bias    |     15     |
+|    crf.per_task_output.pubmed-20k.crf.transitions    |    225     |
+| crf.per_task_output.pubmed-20k.crf.start_transitions |     15     |
+|  crf.per_task_output.pubmed-20k.crf.end_transitions  |     15     |
++------------------------------------------------------+------------+
+Total Trainable Params: 152099202
+T

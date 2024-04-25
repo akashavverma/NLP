@@ -1,0 +1,128 @@
+2024-04-21 10:22:24.618: Fold 0 of 1
+2024-04-21 10:22:24.637: Starting training 0 for fold 0... 
+2024-04-21 10:22:24.698: device: cuda:0
+2024-04-21 10:22:24.700: fold: 0
+2024-04-21 10:22:24.701: train batches: 245
+2024-04-21 10:22:24.702: dev batches: 30
+2024-04-21 10:22:24.703: test batches: 30
+2024-04-21 10:22:32.637: Model: BertHSLN
+2024-04-21 10:22:33.328: Number of model parameters: 179702530
+2024-04-21 10:22:33.331: Number of model parameters bert: 0
+2024-04-21 10:22:33.352: Number of model parameters word_lstm: 36869120
+2024-04-21 10:22:33.353: Number of model parameters attention_pooling: 306400
+2024-04-21 10:22:33.355: Number of model parameters sentence_lstm: 142504000
+2024-04-21 10:22:33.356: Number of model parameters crf: 23010
+2024-04-21 10:22:33.383: training model for fold 0 in epoch 0 ...
+2024-04-21 10:22:34.735: Loss in fold 0, epoch 0, batch 0: 261.10137939453125
+2024-04-21 10:23:32.345: Loss in fold 0, epoch 0, batch 100: 124.55905151367188
+2024-04-21 10:24:34.664: Loss in fold 0, epoch 0, batch 200: 440.0111999511719
+2024-04-21 10:24:58.301: evaluating model...
+2024-04-21 10:25:06.490: New best dev weighted-f1 0.5830870984098263!
+2024-04-21 10:25:14.582: *** fold: 0,  epoch: 0, train duration: 144.91788458824158, dev weighted-f1: 0.5830870984098263, test weighted-F1: 0.5830870984098263, test macro-F1: 0.2557349375625578, test accuracy: 0.6568252865578326
+2024-04-21 10:25:14.583: training model for fold 0 in epoch 1 ...
+2024-04-21 10:25:15.153: Loss in fold 0, epoch 1, batch 0: 162.82244873046875
+2024-04-21 10:26:16.033: Loss in fold 0, epoch 1, batch 100: 63.620880126953125
+2024-04-21 10:27:16.444: Loss in fold 0, epoch 1, batch 200: 170.07794189453125
+2024-04-21 10:27:40.473: evaluating model...
+2024-04-21 10:27:48.576: New best dev weighted-f1 0.6779409720678141!
+2024-04-21 10:27:56.654: *** fold: 0,  epoch: 1, train duration: 145.889502286911, dev weighted-f1: 0.6779409720678141, test weighted-F1: 0.6779409720678141, test macro-F1: 0.34198613406042644, test accuracy: 0.7436609934004863
+2024-04-21 10:27:56.655: training model for fold 0 in epoch 2 ...
+2024-04-21 10:27:57.115: Loss in fold 0, epoch 2, batch 0: 116.36602783203125
+2024-04-21 10:28:56.068: Loss in fold 0, epoch 2, batch 100: 140.9373779296875
+2024-04-21 10:29:52.377: Loss in fold 0, epoch 2, batch 200: 89.61077880859375
+2024-04-21 10:30:21.288: evaluating model...
+2024-04-21 10:30:29.401: New best dev weighted-f1 0.6825103622208678!
+2024-04-21 10:30:37.495: *** fold: 0,  epoch: 2, train duration: 144.63276267051697, dev weighted-f1: 0.6825103622208678, test weighted-F1: 0.6825103622208678, test macro-F1: 0.3620595182378342, test accuracy: 0.7332407085793679
+2024-04-21 10:30:37.496: training model for fold 0 in epoch 3 ...
+2024-04-21 10:30:38.304: Loss in fold 0, epoch 3, batch 0: 94.3367919921875
+2024-04-21 10:31:38.114: Loss in fold 0, epoch 3, batch 100: 37.30574035644531
+2024-04-21 10:32:36.817: Loss in fold 0, epoch 3, batch 200: 91.0997314453125
+2024-04-21 10:32:59.134: evaluating model...
+2024-04-21 10:33:07.237: New best dev weighted-f1 0.7111491727493027!
+2024-04-21 10:33:15.323: *** fold: 0,  epoch: 3, train duration: 141.63737320899963, dev weighted-f1: 0.7111491727493027, test weighted-F1: 0.7111491727493027, test macro-F1: 0.3908457571117549, test accuracy: 0.7634595345606113
+2024-04-21 10:33:15.324: training model for fold 0 in epoch 4 ...
+2024-04-21 10:33:16.132: Loss in fold 0, epoch 4, batch 0: 308.70245361328125
+2024-04-21 10:34:13.059: Loss in fold 0, epoch 4, batch 100: 167.5443115234375
+2024-04-21 10:35:11.344: Loss in fold 0, epoch 4, batch 200: 64.01559448242188
+2024-04-21 10:35:36.964: evaluating model...
+2024-04-21 10:35:45.080: New best dev weighted-f1 0.7144765476803626!
+2024-04-21 10:35:53.159: *** fold: 0,  epoch: 4, train duration: 141.6401572227478, dev weighted-f1: 0.7144765476803626, test weighted-F1: 0.7144765476803626, test macro-F1: 0.41184734820383156, test accuracy: 0.7645015630427232
+2024-04-21 10:35:53.160: training model for fold 0 in epoch 5 ...
+2024-04-21 10:35:53.534: Loss in fold 0, epoch 5, batch 0: 49.85589599609375
+2024-04-21 10:36:49.639: Loss in fold 0, epoch 5, batch 100: 126.970703125
+2024-04-21 10:37:49.480: Loss in fold 0, epoch 5, batch 200: 76.57843017578125
+2024-04-21 10:38:14.802: evaluating model...
+2024-04-21 10:38:22.908: New best dev weighted-f1 0.7230962976426036!
+2024-04-21 10:38:31.005: *** fold: 0,  epoch: 5, train duration: 141.64181470870972, dev weighted-f1: 0.7230962976426036, test weighted-F1: 0.7230962976426036, test macro-F1: 0.427683645324377, test accuracy: 0.7679749913164293
+2024-04-21 10:38:31.006: training model for fold 0 in epoch 6 ...
+2024-04-21 10:38:31.916: Loss in fold 0, epoch 6, batch 0: 83.7130126953125
+2024-04-21 10:39:28.477: Loss in fold 0, epoch 6, batch 100: 79.5595703125
+2024-04-21 10:40:25.494: Loss in fold 0, epoch 6, batch 200: 93.25152587890625
+2024-04-21 10:40:52.998: evaluating model...
+2024-04-21 10:41:01.102: New best dev weighted-f1 0.7456260169753561!
+2024-04-21 10:41:09.188: *** fold: 0,  epoch: 6, train duration: 141.99154996871948, dev weighted-f1: 0.7456260169753561, test weighted-F1: 0.7456260169753561, test macro-F1: 0.46927110481082035, test accuracy: 0.7749218478638417
+2024-04-21 10:41:09.190: training model for fold 0 in epoch 7 ...
+2024-04-21 10:41:10.020: Loss in fold 0, epoch 7, batch 0: 201.93560791015625
+2024-04-21 10:42:05.757: Loss in fold 0, epoch 7, batch 100: 95.55169677734375
+2024-04-21 10:43:05.231: Loss in fold 0, epoch 7, batch 200: 52.466064453125
+2024-04-21 10:43:30.846: evaluating model...
+2024-04-21 10:43:38.916: fold: 0, epoch: 7, train duration: 141.65610194206238, dev weighted-f1: 0.7413542102218404
+2024-04-21 10:43:38.917: training model for fold 0 in epoch 8 ...
+2024-04-21 10:43:39.577: Loss in fold 0, epoch 8, batch 0: 87.8590087890625
+2024-04-21 10:44:40.344: Loss in fold 0, epoch 8, batch 100: 128.6300048828125
+2024-04-21 10:45:37.262: Loss in fold 0, epoch 8, batch 200: 138.80780029296875
+2024-04-21 10:46:00.523: evaluating model...
+2024-04-21 10:46:08.522: New best dev weighted-f1 0.7563164597580726!
+2024-04-21 10:46:16.618: *** fold: 0,  epoch: 8, train duration: 141.60532522201538, dev weighted-f1: 0.7563164597580726, test weighted-F1: 0.7563164597580726, test macro-F1: 0.5283201852309224, test accuracy: 0.7693643626259118
+2024-04-21 10:46:16.620: training model for fold 0 in epoch 9 ...
+2024-04-21 10:46:17.011: Loss in fold 0, epoch 9, batch 0: 38.32781982421875
+2024-04-21 10:47:18.119: Loss in fold 0, epoch 9, batch 100: 38.21917724609375
+2024-04-21 10:48:11.757: Loss in fold 0, epoch 9, batch 200: 58.40899658203125
+2024-04-21 10:48:38.721: evaluating model...
+2024-04-21 10:48:46.813: fold: 0, epoch: 9, train duration: 142.10135006904602, dev weighted-f1: 0.75458212118046
+2024-04-21 10:48:46.815: training model for fold 0 in epoch 10 ...
+2024-04-21 10:48:47.318: Loss in fold 0, epoch 10, batch 0: 117.00588989257812
+2024-04-21 10:49:43.585: Loss in fold 0, epoch 10, batch 100: 33.2547607421875
+2024-04-21 10:50:43.093: Loss in fold 0, epoch 10, batch 200: 36.53570556640625
+2024-04-21 10:51:08.594: evaluating model...
+2024-04-21 10:51:16.702: New best dev weighted-f1 0.7616344251054133!
+2024-04-21 10:51:24.777: *** fold: 0,  epoch: 10, train duration: 141.77852654457092, dev weighted-f1: 0.7616344251054133, test weighted-F1: 0.7616344251054133, test macro-F1: 0.5243258995329435, test accuracy: 0.776311219173324
+2024-04-21 10:51:24.779: training model for fold 0 in epoch 11 ...
+2024-04-21 10:51:25.338: Loss in fold 0, epoch 11, batch 0: 50.04461669921875
+2024-04-21 10:52:22.417: Loss in fold 0, epoch 11, batch 100: 128.07763671875
+2024-04-21 10:53:24.593: Loss in fold 0, epoch 11, batch 200: 52.419921875
+2024-04-21 10:53:46.298: evaluating model...
+2024-04-21 10:53:54.403: New best dev weighted-f1 0.7781913938837038!
+2024-04-21 10:54:02.497: *** fold: 0,  epoch: 11, train duration: 141.5187554359436, dev weighted-f1: 0.7781913938837038, test weighted-F1: 0.7781913938837038, test macro-F1: 0.5651924901944452, test accuracy: 0.7912469607502605
+2024-04-21 10:54:02.498: training model for fold 0 in epoch 12 ...
+2024-04-21 10:54:03.495: Loss in fold 0, epoch 12, batch 0: 40.27490234375
+2024-04-21 10:55:03.765: Loss in fold 0, epoch 12, batch 100: 22.1002197265625
+2024-04-21 10:55:59.317: Loss in fold 0, epoch 12, batch 200: 24.99591064453125
+2024-04-21 10:56:24.325: evaluating model...
+2024-04-21 10:56:32.428: fold: 0, epoch: 12, train duration: 141.82649874687195, dev weighted-f1: 0.7720335245861305
+2024-04-21 10:56:32.430: training model for fold 0 in epoch 13 ...
+2024-04-21 10:56:33.540: Loss in fold 0, epoch 13, batch 0: 151.516845703125
+2024-04-21 10:57:34.809: Loss in fold 0, epoch 13, batch 100: 213.2757568359375
+2024-04-21 10:58:29.713: Loss in fold 0, epoch 13, batch 200: 57.410858154296875
+2024-04-21 10:58:54.460: evaluating model...
+2024-04-21 10:59:02.547: fold: 0, epoch: 13, train duration: 142.03013610839844, dev weighted-f1: 0.7730638108032154
+2024-04-21 10:59:02.549: training model for fold 0 in epoch 14 ...
+2024-04-21 10:59:02.901: Loss in fold 0, epoch 14, batch 0: 36.49468994140625
+2024-04-21 11:00:00.195: Loss in fold 0, epoch 14, batch 100: 43.4837646484375
+2024-04-21 11:00:59.333: Loss in fold 0, epoch 14, batch 200: 16.943984985351562
+2024-04-21 11:01:24.201: evaluating model...
+2024-04-21 11:01:32.287: fold: 0, epoch: 14, train duration: 141.65173411369324, dev weighted-f1: 0.7740126816965212
+2024-04-21 11:01:32.289: training model for fold 0 in epoch 15 ...
+2024-04-21 11:01:32.921: Loss in fold 0, epoch 15, batch 0: 67.73150634765625
+2024-04-21 11:02:28.476: Loss in fold 0, epoch 15, batch 100: 20.35491943359375
+2024-04-21 11:03:29.975: Loss in fold 0, epoch 15, batch 200: 64.4498291015625
+2024-04-21 11:03:54.022: evaluating model...
+2024-04-21 11:04:02.117: fold: 0, epoch: 15, train duration: 141.7332639694214, dev weighted-f1: 0.7753337720386393
+2024-04-21 11:04:02.119: training model for fold 0 in epoch 16 ...
+2024-04-21 11:04:02.841: Loss in fold 0, epoch 16, batch 0: 115.0596923828125
+2024-04-21 11:04:57.814: Loss in fold 0, epoch 16, batch 100: 12.286087036132812
+2024-04-21 11:05:55.490: Loss in fold 0, epoch 16, batch 200: 113.61737060546875
+2024-04-21 11:06:24.159: evaluating model...
+2024-04-21 11:06:32.241: fold: 0, epoch: 16, train duration: 142.03990483283997, dev weighted-f1: 0.7726942660306705
+2024-04-21 11:06:32.258: saving best model to results/2024-04-21_10_22_22_pubmed-20k_baseline/0_0_model.pt
+2024-04-21 11:06:34.052: finished training 0 for fold 0: 2649.433899641037
