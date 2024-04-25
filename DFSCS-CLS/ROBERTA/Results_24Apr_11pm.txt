@@ -1,0 +1,41 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Started iteration 1
+Starting epoch 1... finished! Time:  00h04m21s
+Starting epoch 2... finished! Time:  00h04m21s
+Starting epoch 3... finished! Time:  00h04m20s
+Starting epoch 4... finished! Time:  00h04m18s
+  Iteration time:  00h17m29s
+Started iteration 2
+Starting epoch 1... finished! Time:  00h04m17s
+Starting epoch 2... finished! Time:  00h04m17s
+Starting epoch 3... finished! Time:  00h04m17s
+Starting epoch 4... finished! Time:  00h04m17s
+  Iteration time:  00h17m27s
+Started iteration 3
+Starting epoch 1... finished! Time:  00h04m17s
+Starting epoch 2... finished! Time:  00h04m17s
+Starting epoch 3... finished! Time:  00h04m17s
+Starting epoch 4... finished! Time:  00h04m17s
+  Iteration time:  00h17m27s
+Started iteration 4
+Starting epoch 1... finished! Time:  00h04m14s
+Starting epoch 2... finished! Time:  00h04m15s
+Starting epoch 3... finished! Time:  00h04m14s
+Starting epoch 4... finished! Time:  00h04m14s
+  Iteration time:  00h17m16s
+End of evaluation. Total time: 01h09m46s
