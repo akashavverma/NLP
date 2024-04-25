@@ -1,4 +1,4 @@
-### Experiments
+### Experiments( We have added the log files for baseline models in result folder)
 
 We considered the task of classifying sentences in Legal Documents based on their respective rhetorical roles.
 
